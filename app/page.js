@@ -56,7 +56,7 @@ export default function Home() {
               placeholder="e.g. sarah"
               value={recipient}
               onChange={e => setRecipient(e.target.value)}
-              className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-gray-400"
+              className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-gray-400 text-gray-800 bg-white"
             />
           </div>
 
