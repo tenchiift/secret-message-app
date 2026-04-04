@@ -9,9 +9,7 @@ export default function Inbox() {
   const [loading, setLoading] = useState(true)
   const params = useParams()
   const name = params.name
-  console.log('params:', params)
-console.log('name:', name)
-
+  
 useEffect(() => {
   async function fetchMessages() {
     console.log('fetching for:', name)
