@@ -42,8 +42,8 @@ export default function Home() {
     )
   }
 
-  return (
-    <main className="min-h-screen flex items-center justify-center bg-gray-50">
+return (
+    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-50 px-4">
       <div className="bg-white rounded-2xl p-10 max-w-md w-full shadow-sm">
         <h1 className="text-2xl font-medium text-gray-800 mb-1">Send a secret message 🤫</h1>
         <p className="text-gray-400 text-sm mb-8">100% anonymous. They'll never know who sent it.</p>
@@ -78,6 +78,9 @@ export default function Home() {
           >
             {loading ? 'Sending...' : 'Send anonymously →'}
           </button>
+          <a href="/search" className="text-center text-sm text-gray-400 underline hover:text-gray-600">
+            Check your own inbox
+          </a>
         </div>
       </div>
     </main>
