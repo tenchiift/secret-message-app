@@ -54,7 +54,7 @@ useEffect(() => {
           {messages.map(msg => (
             <div key={msg.id} className="bg-white rounded-2xl p-6 shadow-sm">
               <p className="text-gray-700 text-sm leading-relaxed">{msg.content}</p>
-              <p className="text-gray-300 text-xs mt-4">
+              <p className="text-gray-400 text-xs mt-4">
                 {new Date(msg.created_at).toLocaleDateString('en-MY', {
                   year: 'numeric', month: 'short', day: 'numeric',
                   hour: '2-digit', minute: '2-digit'
