@@ -31,7 +31,7 @@ useEffect(() => {
 }, [name])
 
   return (
-    <main className="min-h-screen bg-gray-50 py-16 px-4">
+    <main className="min-h-screen py-16 px-4">
       <div className="max-w-md mx-auto">
         <h1 className="text-2xl font-medium text-gray-800 mb-1">
           Messages for {name} 💌

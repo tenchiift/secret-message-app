@@ -26,7 +26,7 @@ export default function Home() {
 
   if (sent) {
     return (
-      <main className="min-h-screen flex items-center justify-center bg-gray-50">
+      <main className="min-h-screen flex items-center justify-center">
         <div className="bg-white rounded-2xl p-10 max-w-md w-full text-center shadow-sm">
           <div className="text-4xl mb-4">💌</div>
           <h2 className="text-xl font-medium text-gray-800 mb-2">Message sent!</h2>
@@ -43,7 +43,7 @@ export default function Home() {
   }
 
 return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-50 px-4">
+    <main className="min-h-screen flex flex-col items-center justify-center px-4">
       <div className="bg-white rounded-2xl p-10 max-w-md w-full shadow-sm">
         <h1 className="text-2xl font-medium text-gray-800 mb-1">Send a secret message 🤫</h1>
         <p className="text-gray-400 text-sm mb-8">100% anonymous. They'll never know who sent it.</p>

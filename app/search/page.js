@@ -6,7 +6,7 @@ export default function Search() {
   const [name, setName] = useState('')
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+    <main className="min-h-screen flex items-center justify-center px-4">
       <div className="bg-white rounded-2xl p-10 max-w-md w-full shadow-sm text-center">
         <h1 className="text-2xl font-medium text-gray-800 mb-1">Check your inbox 💌</h1>
         <p className="text-gray-400 text-sm mb-8">Enter your name to see your secret messages.</p>

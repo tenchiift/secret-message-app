@@ -3,11 +3,12 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center bg-transparent px-4 text-center pt-60">
-     <h1 style={{ fontFamily: "'Climate Crisis', cursive", color: '#f87b06bd' }} className="text-6xl font-bold mb-4">
+     <h1 style={{ 
+      fontFamily: "'Climate Crisis', cursive", color: '#f87b06bd' }} className="text-6xl font-bold mb-4">
     Send a secret message 🤫
     </h1>
       
-      <p className="text-gray-400 text-lg mb-10 max-w-md">
+      <p className="text-[#f87b06] text-lg mb-10 max-w-md ">
         Anonymous messages.<br />No names. No traces. Just words ! .
       </p>
 
