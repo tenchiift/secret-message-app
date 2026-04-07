@@ -1,12 +1,7 @@
 @import "tailwindcss";
 
 body {
-  background-image: url('/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: #171717;
+  background-color: #000000e0;
   font-family: Arial, Helvetica, sans-serif;
 }
 

@@ -1,4 +1,5 @@
 import "./globals.css";
+import ParticlesBackground from '@/components/Particles'
 
 export const metadata = {
   title: "just4u",
@@ -9,15 +10,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Climate Crisis Font */}
         <link
         href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap"
         rel="stylesheet"
         />
+        {/* Poppins Font */}
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
+
       </head>
       <body>
-
+        <ParticlesBackground />
         {/* this is where the navbar goes */}
-
         <nav style={{
           display: 'flex',
           alignItems: 'center',
@@ -25,7 +30,7 @@ export default function RootLayout({ children }) {
           padding: '16px 32px',
           backgroundColor: 'transparent',
           height: '64px', // this is the height of the navbar , make it fixed //
-          position: 'sticky',
+          position: 'fixed',
           top: 0,
           left: 0,
           right: 0,
@@ -53,7 +58,6 @@ export default function RootLayout({ children }) {
             </a>
           </div>
         </nav>
-
         {children}
       </body>
     </html>

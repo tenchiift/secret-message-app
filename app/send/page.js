@@ -43,14 +43,22 @@ export default function Home() {
   }
 
 return (
+  // main wrapper
     <main className="min-h-screen flex flex-col items-center justify-center px-4">
-      <div className="bg-white rounded-2xl p-10 max-w-md w-full shadow-sm">
-        <h1 className="text-2xl font-medium text-gray-800 mb-1">Send a secret message 🤫</h1>
-        <p className="text-gray-400 text-sm mb-8">100% anonymous. They'll never know who sent it.</p>
+      <span style={{ fontFamily: 'Climate Crisis, sans-serif', color: '#f87b06bd', fontSize: '2.5rem' }}>
+      Send your message !
+      </span>
+      
+      {/* this is where the box starts */}
+      <div className="bg-transparent  rounded-4xl p-16 max-w-md w-full shadow-sm">
+        <p className="text-gray-400 text-sm mb-8">They'll never know who sent it.</p>
 
         <div className="flex flex-col gap-4">
           <div>
-            <label className="text-sm text-gray-500 mb-1 block">Who is this for?</label>
+
+            {/* label goes here */}
+            <label className="text-sm text-gray-200 mb-1 block text-left">Who is this for?</label>
+            {/* input field goes here */}
             <input
               type="text"
               placeholder="e.g. sarah"
