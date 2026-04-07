@@ -48,20 +48,31 @@ return (
       <span style={{ fontFamily: 'Climate Crisis, sans-serif', color: '#f87b06bd', fontSize: '2.5rem' }}>
       Send your message !
       </span>
+      <span style={{ fontFamily: 'Climate Crisis, sans-serif', color: '#f87b06bd', fontSize: '1rem' }}>
+      They'll never know who sent it.
+      <br /> 
       
-      {/* this is where the box starts */}
-      <div className="bg-transparent  rounded-4xl p-16 max-w-md w-full shadow-sm">
-        <p className="text-gray-400 text-sm mb-8">They'll never know who sent it.</p>
+      </span>
+      <br />
 
+      {/* this is where the box starts */}
+      <div className="bg-black  rounded-4xl p-16 max-w-4xl w-full shadow-sm">
         <div className="flex flex-col gap-4">
           <div>
-
+            {/* this is the parrent} */}
             {/* label goes here */}
-            <label className="text-sm text-gray-200 mb-1 block text-left">Who is this for?</label>
+            <label 
+            htmlFor="recipient"
+            style={{ fontFamily: 'Poppins, sans-serif' }} 
+            className="text-sm text-gray-200 mb-1 block text-left"
+            >Who is this for?
+            </label>
+
             {/* input field goes here */}
             <input
+              style={{ fontFamily: 'Poppins, sans-serif' }}
               type="text"
-              placeholder="e.g. sarah"
+              placeholder="e.g. husna"
               value={recipient}
               onChange={e => setRecipient(e.target.value)}
               className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-gray-400 text-gray-800 bg-white"
@@ -69,9 +80,16 @@ return (
           </div>
 
           <div>
-            <label className="text-sm text-gray-500 mb-1 block">Your message</label>
+            <label 
+            style={{ fontFamily: 'Poppins, sans-serif' }} 
+            className="text-sm text-gray-200 mb-1 block"
+            htmlFor="message"
+            >Your message
+            </label>
+            
             <textarea
-              placeholder="Write something nice (or spicy)..."
+              style={{ fontFamily: 'Poppins, sans-serif' }}
+              placeholder="Write something nice (or spicy ?)..."
               value={message}
               onChange={e => setMessage(e.target.value)}
               rows={5}
@@ -79,16 +97,23 @@ return (
             />
           </div>
 
+          {/* send button */}
           <button
+            style={{ fontFamily: 'Poppins, sans-serif' }}
             onClick={handleSend}
             disabled={loading}
             className="bg-gray-800 text-white rounded-xl py-3 text-sm font-medium hover:bg-gray-700 transition disabled:opacity-50"
           >
             {loading ? 'Sending...' : 'Send anonymously →'}
           </button>
-          <a href="/search" className="text-center text-sm text-gray-400 underline hover:text-gray-600">
-            Check your own inbox
+          
+          {/* check your name button */}
+          <a 
+          style={{ fontFamily: 'Poppins, sans-serif' }} 
+          href="/search" className="text-center text-sm text-gray-400 underline hover:text-gray-600">
+          Check your name !
           </a>
+
         </div>
       </div>
     </main>
